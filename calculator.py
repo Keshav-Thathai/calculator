@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.title("Pro Smart Calculator")
+st.title("Pro Smart Calculator  created by Keshav Thathai")
 st.write("Welcome to your simple and fast installable calculator app.")
 st.divider()
 
