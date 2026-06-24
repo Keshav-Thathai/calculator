@@ -1,22 +1,33 @@
 import streamlit as st
 
+
 st.title("🧮 Pro Smart Calculator")
 st.write("Welcome to your simple and fast installable calculator app.")
-st.divider() 
+st.divider()
 
-print("Welcome to the calculator made by Keshav Thathai")
-a=int(input("enter the first number"))
-b=int(input("enter the second number"))
-print("What kind of operation do you want \n press + for addition\n press - for subtraction\n press * for multiplication\n press / for division")
-o=input("enter operation")
-match o:
-   case "+":
-      print(f"The result is {a+b}")
-   case "-":
-      print(f"The result is {a+b}")
-   case "*":
-      print(f"The result is {a+b}")
-   case "/":
-      print(f"The result is {a+b}")
-     
+
+num1 = st.number_input("Enter First Number:", value=0.0)
+num2 = st.number_input("Enter Second Number:", value=0.0)
+
+
+operation = st.selectbox(
+    "Choose Operation:", 
+    ["Addition (+)", "Subtraction (-)", "Multiplication (*)", "Division (/)"]
+)
+
+
+if st.button("Calculate ✨", use_container_width=True):
+    match operation:
+        case "Addition (+)":
+            st.success(f"### 🎯 Result: {num1 + num2}")
+        case "Subtraction (-)":
+            st.success(f"### 🎯 Result: {num1 - num2}")
+        case "Multiplication (*)":
+            st.success(f"### 🎯 Result: {num1 * num2}")
+        case "Division (/)":
+            if num2 != 0:
+                st.success(f"### 🎯 Result: {num1 / num2}")
+            else:
+                st.error("Error! Cannot divide by zero.")
+
 
