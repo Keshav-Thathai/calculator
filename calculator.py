@@ -6,7 +6,7 @@ st.divider()
 
 print("Welcome to the calculator made by Keshav Thathai")
 a=int(input("enter the first number"))
-b=int(input("enter the first number"))
+b=int(input("enter the second number"))
 print("What kind of operation do you want \n press + for addition\n press - for subtraction\n press * for multiplication\n press / for division")
 o=input("enter operation")
 match o:
