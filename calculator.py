@@ -20,7 +20,7 @@ if st.button("Calculate ✨", use_container_width=True):
     match operation:
         case "Addition (+)":
             st.success(f"### 🎯 Result: {num1 + num2}")
-              st.success("Thank you for using")
+            st.success("Thank you for using")
         case "Subtraction (-)":
             st.success(f"### 🎯 Result: {num1 - num2}")
             st.success("Thank you for using")
