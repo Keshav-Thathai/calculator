@@ -6,8 +6,8 @@ st.write("Welcome to your simple and fast installable calculator app.")
 st.divider()
 
 
-num1 = st.number_input("Enter First Number:", value=0.0)
-num2 = st.number_input("Enter Second Number:", value=0.0)
+num1 = st.number_input("Enter First Number:", value=0)
+num2 = st.number_input("Enter Second Number:", value=0)
 
 
 operation = st.selectbox(
