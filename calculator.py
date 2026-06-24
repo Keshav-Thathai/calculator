@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.title(" _____________________
+st.title("
 
 |  _________________  |
 | |              0. | |
